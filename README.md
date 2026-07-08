@@ -1,1 +1,36 @@
-# studyapp
+# Engineering Study App
+
+A polished, client-side educational study app built with React + Vite. It includes:
+
+- animated splash screen
+- local-only authentication flow
+- course, note, and lecture cards
+- offline-friendly demo dashboard
+- persistent user state via localStorage
+- test coverage and production build support
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Test
+
+```bash
+npm test
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Architecture notes
+
+- App shell and screens live in src/App.jsx
+- Demo content is stored in src/data/demoData.js
+- Styling is centralized in src/index.css
+- Tests live in src/App.test.jsx
