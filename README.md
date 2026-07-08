@@ -28,6 +28,20 @@ npm test
 npm run build
 ```
 
+## Android APK
+
+Build a debug APK locally:
+
+```bash
+npx cap sync android
+cd android
+./gradlew assembleDebug
+```
+
+The APK will be generated at android/app/build/outputs/apk/debug/app-debug.apk.
+
+A GitHub Actions workflow is also included to attach the APK automatically to a tagged release.
+
 ## Architecture notes
 
 - App shell and screens live in src/App.jsx
